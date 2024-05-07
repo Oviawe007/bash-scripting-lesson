@@ -1,4 +1,4 @@
-#!/bin/bas
+#!/bin/bash
 #
 # Author: Efosa Oviawe
 # Date : 30/04/2024

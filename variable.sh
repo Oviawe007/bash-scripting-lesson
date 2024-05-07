@@ -35,3 +35,8 @@ echo "Hello there" $2
 
 echo "Hello there" $@
 # $@: all
+###################################
+
+# Another thing that you need to keep in mind is that $0 is used to reference the script itself
+
+echo "The name of the file is: $0."
