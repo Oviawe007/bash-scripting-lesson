@@ -10,7 +10,7 @@ server_name=$(hostname)
 
 echo $server_name
 
-set -x
+set -ox
 ################# MEMORY CHECK ################
 #
 function memory_check(){
@@ -42,7 +42,7 @@ function cpu_usage(){
 function ram_usage(){
   echo ""
         echo "The available and used ram on ${server_name} is : ""
-        cat /proc/meminfo
+        top
         echo ""
 
 }
@@ -63,8 +63,8 @@ function all_checks(){
 	memory_check
 	disk_usage
 	cpu_usage
-	ram_usge
-	kernel_ckeck
+	ram_usage
+	kernel_check
 }
 
 all_checks
