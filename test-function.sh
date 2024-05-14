@@ -39,9 +39,9 @@ case $option in
 
 intro_to_devops(){
 	echo "
-		****** Introduction to DevOps ********
-		
+		****** Introduction to DevOps ********		
 "
+	open /Users/mac/Desktop/Devops/Devops-thebulb/INTRODUCTION\ TO\ DEVOPS.docx 
 }
 
 version_control(){
