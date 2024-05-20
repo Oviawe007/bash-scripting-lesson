@@ -83,7 +83,7 @@ sudo systemctl start nginx
 
 # check the status
 
-sudo sytemctl status nginx
+sudo systemctl status nginx
 }
 
 ########################
