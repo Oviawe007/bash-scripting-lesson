@@ -78,12 +78,12 @@ fi
 func_enable(){
 # Enable NGINX web server
 
-systemctl enable nginx
-systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
 
 # check the status
 
-sytemctl status nginx
+sudo sytemctl status nginx
 }
 
 ########################
