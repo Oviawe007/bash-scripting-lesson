@@ -86,6 +86,27 @@ sudo systemctl start nginx
 sudo systemctl status nginx
 }
 
+#######################
+date_func(){
+
+hour='date +%H'
+
+if [ $hour -lt 12 ]; then
+	echo " GOOD MORNING, INSTALLATION COMPLETED "
+
+elif [ $hour -le 16 ]; then 
+	echo " GOOD AFTERNOON, INSTALLATION COMPLETED"
+
+elif [ $hour -le 20 ]; then
+	echo " GOOD EVENING, INSTALLATION COMPLETED"
+}
+else 
+	echo "GOOD NIGHT, INSTALLATION COMPLETED
+
+fi"
+
+
+
 ########################
 Function call
 ####################
@@ -93,6 +114,9 @@ all_func(){
 
 	menu
 	func_enable
+	date_func
 }
 
 all_func
+
+echo "You are good to go......."
