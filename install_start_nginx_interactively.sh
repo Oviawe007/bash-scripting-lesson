@@ -89,21 +89,19 @@ sudo systemctl status nginx
 #######################
 date_func(){
 
-hour=date +%H
-
-if [[ $hour -lt 12 ]]; then
-	echo " GOOD MORNING, INSTALLATION COMPLETED "
-
-elif [[ $hour -le 16 ]]; then 
-	echo " GOOD AFTERNOON, INSTALLATION COMPLETED"
-
-elif [[ $hour -le 20 ]]; then
-	echo " GOOD EVENING, INSTALLATION COMPLETED"
-
-else 
-	echo "GOOD NIGHT, INSTALLATION COMPLETED"
-
-fi
+	hour=`date +%H`
+	if [ $hour -lt 12 ] # if hour is less than 12
+	then
+	echo "GOOD MORNING WORLD, INSTALLATION COMPLETED"
+	elif [ $hour -le 16 ] # if hour is less than equal to 16
+	then
+	echo "GOOD AFTERNOON WORLD, INSTALLATION COMPLETED"
+	elif [ $hour -le 20 ] # if hour is less than equal to 20
+	then
+	echo "GOOD EVENING WORLD, INSTALLATION COMPLETED"
+	else
+	echo "GOOD NIGHT WORLD, INSTALLATION COMPLETED"
+	fi
 }
 
 
@@ -118,5 +116,4 @@ all_func(){
 }
 
 all_func
-
 echo "You are good to go......."
