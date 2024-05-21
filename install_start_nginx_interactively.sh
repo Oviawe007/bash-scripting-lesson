@@ -89,7 +89,7 @@ sudo systemctl status nginx
 #######################
 date_func(){
 
-hour='date +%H'
+hour=date +%H
 
 if [[ $hour -lt 12 ]]; then
 	echo " GOOD MORNING, INSTALLATION COMPLETED "
