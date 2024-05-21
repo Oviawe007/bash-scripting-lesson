@@ -90,17 +90,18 @@ sudo systemctl status nginx
 date_func(){
 
 	hour=`date +%H`
+	name=hostname
 	if [ $hour -lt 12 ] # if hour is less than 12
 	then
-	echo "GOOD MORNING WORLD, INSTALLATION COMPLETED"
+	echo "GOOD MORNING $name, INSTALLATION COMPLETED"
 	elif [ $hour -le 16 ] # if hour is less than equal to 16
 	then
-	echo "GOOD AFTERNOON WORLD, INSTALLATION COMPLETED"
+	echo "GOOD AFTERNOON $name, INSTALLATION COMPLETED"
 	elif [ $hour -le 20 ] # if hour is less than equal to 20
 	then
-	echo "GOOD EVENING WORLD, INSTALLATION COMPLETED"
+	echo "GOOD EVENING $name, INSTALLATION COMPLETED"
 	else
-	echo "GOOD NIGHT WORLD, INSTALLATION COMPLETED"
+	echo "GOOD NIGHT $name, INSTALLATION COMPLETED"
 	fi
 }
 
