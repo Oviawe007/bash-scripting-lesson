@@ -99,7 +99,7 @@ elif [[ $hour -le 16 ]]; then
 
 elif [[ $hour -le 20 ]]; then
 	echo " GOOD EVENING, INSTALLATION COMPLETED"
-}
+
 else 
 	echo "GOOD NIGHT, INSTALLATION COMPLETED"
 
