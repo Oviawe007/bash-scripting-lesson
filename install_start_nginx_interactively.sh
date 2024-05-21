@@ -91,20 +91,20 @@ date_func(){
 
 hour='date +%H'
 
-if [ $hour -lt 12 ]; then
+if [[ $hour -lt 12 ]]; then
 	echo " GOOD MORNING, INSTALLATION COMPLETED "
 
-elif [ $hour -le 16 ]; then 
+elif [[ $hour -le 16 ]]; then 
 	echo " GOOD AFTERNOON, INSTALLATION COMPLETED"
 
-elif [ $hour -le 20 ]; then
+elif [[ $hour -le 20 ]]; then
 	echo " GOOD EVENING, INSTALLATION COMPLETED"
 }
 else 
-	echo "GOOD NIGHT, INSTALLATION COMPLETED
+	echo "GOOD NIGHT, INSTALLATION COMPLETED"
 
-fi"
-
+fi
+}
 
 
 ########################
